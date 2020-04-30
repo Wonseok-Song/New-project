@@ -1,0 +1,40 @@
+\documentclass[10pt]{oblivoir}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+
+\begin{document}
+
+\title{Homework}
+
+\author{Wonseok Song 2020-29046}
+
+\date{\today}
+
+\maketitle
+
+\section*{\Large{Chapter2}}
+
+\subsection*{\LARGE{Laws of Large Numbers}}
+
+
+\subsubsection*{\large{2.1 Independence}}
+
+Measure theory ends and probability begins with the definition of independence. We begin with what is hopefully a familiar definition and then work our way up to a definition that is appropriate for our current setting.
+
+\begin{flushleft}Two events $A$ and $B$ are \textbf{independent} if $P(A \cap B)=P(A)\,P(B)$\linebreak Two random variables $X$ and $Y$ are \textbf{independent} if for all $C,D \in \mathcal{R}$\end{flushleft}
+
+\begin{center}$P(X \in C,Y \in D)=P(X \in C)\, P(Y \in D)$\end{center}
+
+\begin{flushleft} i.e., the events $A=\{ X\in C \}$ and $B=\{ Y\in D \}$ are independent.\linebreak Two $\sigma$-fields $\mathcal{F}$ and $\mathcal{G}$ are \textbf{independent} if for all $A \in$ $\mathcal{F}$ and $B \in$ $\mathcal{G}$ the events $A$ and $B$ are independent.
+\linebreak As the next result shows, the second definition is a special case of the third.\linebreak
+\textbf{Theorem 2.1.1.} \textit{(i)} If $X$ and $Y$ are independent then $\sigma(X)$ and $\sigma(Y)$ are. \textit{(ii)} Conversely, if $\mathcal{F}$ and $\mathcal{G}$ are independent, $X \in$ $\mathcal{F}$ and $Y \in$ $\mathcal{G}$, then $X$ and $Y$ are independent. 
+
+$Proof$, (i) If  $A \in$ $\sigma(X)$ then it follows from the definition of $\sigma(X)$ that $A=\{ X\in C \}$ for some $C \in \mathcal{R}$. Likewise if  $B \in$ $\sigma(X)$ then $B= \{ Y\in D \}$ for some $D \in \mathcal{R}$, so using these facts and the independence of $X$ and $Y$,\end{flushleft}
+\begin{center}$P(A \cap B)=P(X \in C, Y \in D)=P(X \in C)\, P(Y \in D)=P(A)\,P(B)$\end{center}
+
+\begin{flushleft}(ii) Conversely if $X \in$ $\mathcal{F}$ and $Y \in$ $\mathcal{G}$ and $C,D \in$ $\mathcal{R}$ it follows from the defintion of measurability that $\{ X\in C \}$ $\in$ $\mathcal{F}$ , $\{ Y\in D \}$ $\in$ $\mathcal{G}$. Since $\mathcal{F}$ and $\mathcal{G}$ are independent, it follows that $P(X \in C, Y \in D) = P(X \in C) \, P(Y \in D)$.\linebreak The first definition is, in turn, a special case of the second.
+\linebreak
+\textbf{Theorem 2.1.2.} \textit{(i)} If $A$ and $B$ are independent then so are $A^c$ and $B$, $A$ and $B^c$, and $A^c$ and $B^c$. \textit{(ii)} Conversely events $A$ and $B$ are independent if and only if their indicator random variables $1_A$ and $1_B$ are independent.
+\end{flushleft}
+
+\end{document}
